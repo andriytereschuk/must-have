@@ -46,6 +46,14 @@ td {
 	padding: 10px;	
 }
 
+td:first-child {
+	text-align: center;
+}
+
+td[colspan="2"] {
+	text-align: left;
+}
+
 
 a, b {
 	color: #333;
@@ -58,12 +66,16 @@ a img {
 	max-height: 100px;
 }
 
-.download {
+td b + a {
+	padding-left: 5px;
+}
+
+.grey {
 	font-size: 16px;
 	text-decoration: underline;
 	font-weight: 300;
 	color: #777;
 }
-.download:hover {
+.grey:hover {
 	text-decoration: none;
 }
